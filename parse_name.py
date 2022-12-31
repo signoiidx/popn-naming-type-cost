@@ -20,9 +20,9 @@ def parse_name(csv_text):
             sentenseRoman += chunkRoman
             typingCount += chunkLength
             
-            pairResult.extend([sentenseRoman, typingCount])
+            pairResult.extend(tuple([sentenseRoman, typingCount]))
             
             index += 1
             
         csvResult.append(pairResult)
-        
+        print(pairResult)
