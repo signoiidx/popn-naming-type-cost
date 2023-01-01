@@ -2,25 +2,25 @@ import csv
 import pykakasi
 
 def parse_name(csv_text):
-    csvResult = []
+    csv_result = []
     
     for pair_text in csv_text: 
         kks = pykakasi.kakasi()
         result = [kks.convert(pair_text[0]), kks.convert(pair_text[1])]
         
-        pairResult = []
+        pair_result = []
         
         for category in result: 
-            sentenseRoman = ''
+            sentense_Roman = ''
             
             for item in category: 
-                chunkRoman = item['hepburn']
-                sentenseRoman += ''.join(chunkRoman)
+                chunk_Roman = item['hepburn']
+                sentense_Roman += ''.join(chunk_Roman)
                 
-            typingCount = len(sentenseRoman)
-            pairResult.extend(tuple([sentenseRoman, typingCount]))
+            typing_count = len(sentense_Roman)
+            pair_result.extend(tuple([sentense_Roman, typing_count]))
 
-        csvResult.append(pairResult)
-        print(pairResult)
+        csv_result.append(pair_result)
+        print(pair_result)
         
-    return csvResult
+    return csv_result
