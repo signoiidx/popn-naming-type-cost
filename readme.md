@@ -2,7 +2,7 @@
 
 ## Overview
 
-- This script approximately calculates key-stroke counts which need to input certain music game-oriented names.  
+- This script approximately calculates key-stroke counts which need to input certain music game-oriented names.
 - Plus, enables us to compare whether it is more efficient to type title or genre to mention a particular song.
 - [This article](https://example.com) is based on the result.
 
