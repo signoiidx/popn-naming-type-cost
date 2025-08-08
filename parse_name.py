@@ -11,14 +11,14 @@ def parse_name(csv_text):
         pair_result = []
         
         for category in result: 
-            sentense_Roman = ''
+            sentence_roman = ''
             
             for item in category: 
                 chunk_Roman = item['hepburn']
-                sentense_Roman += ''.join(chunk_Roman)
+                sentence_roman += ''.join(chunk_Roman)
                 
-            typing_count = len(sentense_Roman)
-            pair_result.extend(tuple([sentense_Roman, typing_count]))
+            typing_count = len(sentence_roman)
+            pair_result.extend(tuple([sentence_roman, typing_count]))
 
         csv_result.append(pair_result)
         print(pair_result)
