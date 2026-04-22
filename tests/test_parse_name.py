@@ -1,11 +1,13 @@
+"""Tests for parse_name module."""
 import os
 import sys
 
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
-from parse_name import parse_name
+from parse_name import parse_name  # pylint: disable=wrong-import-position
 
 
 def test_parse_name_returns_romanized_strings_and_counts():
+    """Test that parse_name returns correct romanization and keystroke counts."""
     data = [["タイトル", "ジャンル"]]
     expected = [["taitoru", 7, "janru", 5]]
     assert parse_name(data) == expected
