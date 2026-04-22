@@ -8,7 +8,8 @@
 
 ## Requirements
 
-- [pykakasi](https://codeberg.org/miurahr/pykakasi) (to parse Japanese phrase; requires **Python 3.7+**. The library advertises support for Python 3.6–3.9.)
+- Python: **3.8+** and still supported. See [Python Developer's Guide](https://devguide.python.org/versions/) for supported versions.
+- [pykakasi](https://codeberg.org/miurahr/pykakasi) (to parse Japanese phrase)
 - installing CSV file from [external pastebin](https://pastebin.com/TsMzbQi9)  
 (Title and genre data might be KONAMI's Intellectual Property. In order to keep this repository as MIT License, *polluted* material would not be included.)
 
