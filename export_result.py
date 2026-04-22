@@ -1,3 +1,4 @@
+"""Export analysis results to CSV."""
 import csv
 import os
 
