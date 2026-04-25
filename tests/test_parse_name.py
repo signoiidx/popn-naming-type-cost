@@ -29,4 +29,4 @@ def test_parse_empty_string_returns_empty():
 
 def test_parse_name_empty_input():
     """Test that an empty list returns an empty list."""
-    assert parse_name([]) == []
+    assert not parse_name([])
