@@ -11,3 +11,22 @@ def test_parse_name_returns_romanized_strings_and_counts():
     data = [["タイトル", "ジャンル"]]
     expected = [["taitoru", 7, "janru", 5]]
     assert parse_name(data) == expected
+
+
+def test_parse_kanji_name_returns_romanized_strings_and_counts():
+    """Test that kanji parse_name returns correct romanization and keystroke counts."""
+    data = [["題名", "種類"]]
+    expected = [["daimei", 6, "shurui", 6]]
+    assert parse_name(data) == expected
+
+
+def test_parse_empty_string_returns_empty():
+    """空文字列が空文字列・0カウントで返ること。"""
+    data = [["", ""]]
+    expected = [["", 0, "", 0]]
+    assert parse_name(data) == expected
+
+
+def test_parse_name_empty_input():
+    """Test that an empty list returns an empty list."""
+    assert not parse_name([])
